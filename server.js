@@ -2,12 +2,13 @@ require("dotenv").config()
 const cors = require("cors");
 const express = require("express");
 const mongoose = require("mongoose");
+const server = require("express/lib/application");
 
 // Crear server
 
 const app = express();
 
-const port = 3030;
+const port = server.listen(process.env.PORT || 3000);
 
 // Conexión a la BD
 mongoose.connect(process.env.DATABASE_URL_CLOUD, {useNewUrlParser: true});

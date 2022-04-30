@@ -1,4 +1,4 @@
-GET http://localhost:3030/tareas
+GET http://localhost:3000/tareas
 Accept: application/json
 
 ###
